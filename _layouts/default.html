@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+<html>
+  {% include head.html %}
+  <body>
+    {% include sidebar.html %}
+
+    <main id="main">
+      {{ content }}
+
+      {% include footer.html %}
+    </main>
+
+    <button id="menu">
+      <span id="menu-icons"></span>
+    </button>
+
+    {% include scripts.html %}
+  </body>
+</html>

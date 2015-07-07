@@ -1,0 +1,38 @@
+<aside id="sidebar">
+  <div id="sidebar-left">
+    <a id="sidebar-avatar" href="{{ "/" | prepend: site.baseurl }}">
+      <img id="sidebar-avatar-img" alt="{{ site.tittle }}" src="{{ "/assets/img/avatar.jpg" | prepend: site.baseurl }}"/>
+    </a>
+
+    <div id="sidebar-social">
+      <a href="{{ "/rss.xml" | prepend: site.baseurl }}" class="sidebar-social-icon feed"></a>
+      <a href="mailto:{{ site.email }}" class="sidebar-social-icon email"></a>
+      {% include social.html %}
+    </div>
+
+    <ul id="sidebar-tags">
+      <li class="sidebar-tag active" data-filter="all">全部</li>
+        <li class="sidebar-tag" data-filter="前端">前端</li>
+        <li class="sidebar-tag" data-filter="后端">后端</li>
+        <li class="sidebar-tag" data-filter="网络">网络</li>
+        <li class="sidebar-tag" data-filter="翻译">翻译</li>
+        <li class="sidebar-tag" data-filter="生活">生活</li>
+    </ul>
+    </ul>
+  </div>
+
+  <div id="sidebar-right">
+    <div id="search-box">
+      <input id="search-input" type="text" placeholder="Search" />
+    </div>
+
+    <nav id="toc">
+      {% for post in site.posts %}
+      <a class="toc-link" data-tags="{{ post.tags | join: ' ' }}" href="{{ post.url }}">
+        {{ post.title }}
+          <!--<span class="toc-date">{{ post.date | date: "%b %Y" }}</span>-->
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+</aside>

@@ -1,0 +1,27 @@
+---
+layout: null
+---
+
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cherry's Blog</title>
+    <link>http://cherryleer.com</link>
+    <atom:link href="http://cherryleer.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>这里是Cherry的个人博客，记录了Cherry日常的学习、工作和生活。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+
+    {% for post in site.posts limit:15 %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>http://cherryleer.com{{ post.url }}</link>
+      <author>cherryleer@gmail.com(Cherry Lee)</author>
+      <guid>http://cherryleer.com{{ post.id }}</guid>
+      <description>{{ post.description | xml_escape }}</description>
+      <pubDate>{{ post.date | date_to_string }}</pubDate>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
