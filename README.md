@@ -22,7 +22,7 @@ Mail:<a href="mailto:cherry@cherryleer.com" class="dsq-brlink" target="_blank">c
 
 GMail:<a href="mailto:cherryleer@gmail.com" class="dsq-brlink" target="_blank">cherryleer@gmail.com</a>
 
-GitHub:<a href="https://github.com/cherrylee" target="_blank">github.com/cherrylee</a>
+GitHub:<a href="https://github.com/cherryleer" target="_blank">github.com/cherryleer</a>
 
 Resume:<a href="/assets/resume/liren.pdf" target="_blank">cn</a> <a href="/assets/resume/renli.pdf" target="_blank">en</a>
 
