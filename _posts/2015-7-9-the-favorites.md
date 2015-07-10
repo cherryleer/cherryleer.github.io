@@ -42,9 +42,10 @@ tags: 生活
 * [FreeMarker](http://freemarker.org)
 * [BootStrap](http://getbootstrap.com)
 * [BootStrap中文网](http://www.bootcss.com)
-* [AngularJS中文网](http://www.apjs.net)
 * [AngularJS](www.angularjs.org)
-* [Grunt](http://gruntjs.cn)
+* [AngularJS中文网](http://www.apjs.net)
+* [Grunt](http://gruntjs.com)
+* [Grunt中文网](http://gruntjs.cn)
 
 
 持续更新中。。。
