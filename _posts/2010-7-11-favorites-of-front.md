@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 收藏夹：前端相关
+title: 收藏夹：前端
 description: 前端相关收藏。
 tags: 收藏夹
 ---
