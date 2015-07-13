@@ -6,6 +6,7 @@ tags: 收藏夹
 ---
 
 ## **平台**
+* [众成技术聚乐部](http://happytechgroup.github.io)
 * [InfoQ](http://www.infoq.com)
 * [Hacker News](https://news.ycombinator.com/news)
 * [酷壳](http://coolshell.cn)
@@ -19,9 +20,18 @@ tags: 收藏夹
 * [刘未鹏](http://mindhacks.cn)
 
 ## **朋友**
-* [Dan's Workspace](http://fuckgfw.net)
-* [黑白](http://youngsterxyf.github.com)
+* [HE Qichen's Hackspace](http://heqichen.cn/wp)
+* [Dan's Workspace](http://shanhh.com)
+* [黑白](http://blog.xiayf.cn)
+* [Jack's Blog](http://zhwbqd.github.io)
+* [WalterINSH](http://walterinsh.github.io)
+* [Technology&Finance](http://qian-zhu.github.io)
+* [搬运工](http://qian-zhu.github.io)
+* [蛋糕仙人](http://gejiawen.github.io)
+* [异度部落格](http://blog.yidooo.net)
 
+
+持续更新中。。。
 
 
 
