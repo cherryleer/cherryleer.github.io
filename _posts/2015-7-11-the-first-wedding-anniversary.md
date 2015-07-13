@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一周年纪念
+title: 生活：一周年纪念
 description: 2015年7月11日，一年前的今天和老婆领了证。一年过去了，生活简单而幸福，mark一下。。。
 tags: 生活
 ---
