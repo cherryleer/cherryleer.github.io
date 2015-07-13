@@ -7,3 +7,4 @@ tags: 收藏夹
 
 ## **电子书**
 * [网盘](http://pan.baidu.com/s/1mgzdvYw)
+* [JournalDev](http://www.journaldev.com/dev/java)
