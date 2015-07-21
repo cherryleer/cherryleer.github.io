@@ -9,7 +9,7 @@ tags: 后端
  
 策略模式定义了一些列算法，并把这些算法分别封装起来，让它们之间可以相互替换，此模式让算法的变化独立于使用算法的客户。
  
-<a href="/assets/img/2015-6-18/strategy-pattern-uml.png" target="_blank"><img alt="" src="/assets/img/2015-6-18/strategy-pattern-uml.png"/></a>
+<p class="picture"><img alt="" src="/assets/img/2015-6-18/strategy-pattern-uml.png"/></p>
 
 ## **组成**
 

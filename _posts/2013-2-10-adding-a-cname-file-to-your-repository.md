@@ -25,11 +25,11 @@ tags: 前端
 
 在你repository的右侧导航栏，点击Settings。
 
-<a href="/assets/img/2013-2-10/setting.jpg" target="_blank"><img alt="" src="/assets/img/2013-2-10/setting.jpg"/></a>
+<img alt="" src="/assets/img/2013-2-10/setting.jpg"/>
 
 在"GitHub Pages"下，你应该能看到CNAME中的自定义域名。
 
-<a href="/assets/img/2013-2-10/cherrylee_name.jpg" target="_blank"><img alt="" src="/assets/img/2013-2-10/cherrylee_name.jpg"/></a>
+<img alt="" src="/assets/img/2013-2-10/cherrylee_name.jpg"/>
 
 ## 设置DNS配置
 
