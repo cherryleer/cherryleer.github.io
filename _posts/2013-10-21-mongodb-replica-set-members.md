@@ -19,7 +19,7 @@ MongoDB复制集是一个提供了冗余性和高可用性的mongod进程的集�
 
 主节点是复制集中唯一能够接收写操作的成员。MongoDB在主节点上执行写操作，并将这些操作记录在主节点的oplog日志中。从节点通过复制主节点的oplog，并将其中的操作应用到它们的数据集中。
 
-<p class="picture"><img alt="" src="/assets/img/2013-10-21/replica_routing.png"/></p>
+<a href="/assets/img/2013-10-21/replica_routing.png" target="_blank"><img alt="" src="/assets/img/2013-10-21/replica_routing.png"/></a>
 
 复制集中的所有节点都能够接收读操作。但在默认的情况下，一个应用只将读操作直接发送到主节点。
 
@@ -31,7 +31,7 @@ MongoDB复制集是一个提供了冗余性和高可用性的mongod进程的集�
 
 下面的三元复制集中有两个从节点。
 
-<p class="picture"><img alt="" src="/assets/img/2013-10-21/replica_set.jpg"/></p>
+<a href="/assets/img/2013-10-21/replica_set.jpg" target="_blank"><img alt="" src="/assets/img/2013-10-21/replica_set.jpg"/></a>
 
 虽然客户端无法直接向从节点写数据，但是客户端可以读从节点的数据。
 一些从节点的特殊配置：
