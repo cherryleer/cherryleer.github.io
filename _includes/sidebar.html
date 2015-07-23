@@ -30,7 +30,7 @@
       {% for post in site.posts %}
       <a class="toc-link" data-tags="{{ post.tags | join: ' ' }}" href="{{ post.url }}">
         {{ post.title }}
-          <!--<span class="toc-date">{{ post.date | date: "%b %Y" }}</span>-->
+          <!--<span style="float:right">{{ post.date | date: "%b %Y" }}</span>-->
       </a>
       {% endfor %}
     </nav>

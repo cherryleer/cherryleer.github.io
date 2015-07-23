@@ -6,7 +6,7 @@ title: Cherryleer's Blog
 description: 这是Cherryleer的个人博客。
 email: cherryleer@gmail.com
 github: cherryleer
-permalink: /:year/:title
+permalink: /:year/:month/:day/:title
 
 
 # Comment
