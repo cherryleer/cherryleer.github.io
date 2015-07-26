@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 读书笔记：MySQL存储引擎简介
+title: 数据库笔记：MySQL存储引擎简介
 description: MySQl数据库区别于其他数据库的最重要的一个特点就是其插件式的表存储引擎。
 tags: 后端
 ---

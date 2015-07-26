@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 读书笔记：Java内存模型
+title: JVM笔记：Java内存模型
 description: Java虚拟机规范中，试图定义一种Java内存模型来屏蔽各种硬件和操作系统的内存访问差异，以实现让Java程序在各种平台下都能达到一致的内存访问效果。
 tags: 后端
 ---
