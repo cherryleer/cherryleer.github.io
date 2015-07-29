@@ -2,7 +2,7 @@
 layout: post
 title: 数据库笔记：DATETIME和TIMESTAMP
 description: MySQL DATETIME和TIMESTAMP比较
-tags:
+tags: 后端
 ---
 
 ## **相同**
