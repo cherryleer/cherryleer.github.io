@@ -24,9 +24,9 @@ GMail:<a href="mailto:cherryleer@gmail.com" class="dsq-brlink" target="_blank">c
 
 GitHub:<a href="https://github.com/cherryleer" target="_blank">github.com/cherryleer</a>
 
-Resume:<a href="/assets/resume/liren.pdf" target="_blank">cn</a> <a href="/assets/resume/renli.pdf" target="_blank">en</a>
+Resume:<a href="{{site.qiniu_static}}/assets/resume/liren.pdf" target="_blank">cn</a> <a href="{{site.qiniu_static}}/assets/resume/renli.pdf" target="_blank">en</a>
 
 
 ##扫一扫</h2>
 
-<img alt="" src="http://cherryleer.com/assets/img/weixin.jpg"/>
+<img alt="" src="http://cherryleer.com{{site.qiniu_static}}/assets/img/weixin.jpg"/>

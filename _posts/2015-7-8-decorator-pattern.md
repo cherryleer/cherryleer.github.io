@@ -9,7 +9,7 @@ tags: 后端
  
 装饰者模式，又叫装饰模式。装饰模式是在不必改变原类文件和使用继承的情况下，动态地扩展一个对象的功能。它是通过创建一个包装对象，也就是装饰来包裹真实的对象。
  
-<img alt="" src="/assets/img/2015-7-8/decorator-pattern-uml.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-8/decorator-pattern-uml.jpg"/>
 
 ## **组成**
 
@@ -43,19 +43,19 @@ Starbuzz是以扩张速度最快而闻名的咖啡连锁店。因为扩张速度
 
 他们原先的设计是这样的：
 
-<img alt="" src="/assets/img/2015-7-8/pre-design.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-8/pre-design.jpg"/>
 
 购买咖啡时，也可以要求在其中加入各种调料，例如：豆浆、摩卡、牛奶或着奶泡。Starbuzz会根据所加入的调料收取不同的费用。
 
 如果简单使用继承：
 
-<img alt="" src="/assets/img/2015-7-8/simple-design.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-8/simple-design.jpg"/>
 
 ### **使用装饰者模式**
 
-<img alt="" src="/assets/img/2015-7-8/design.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-8/design.jpg"/>
 
-<img alt="" src="/assets/img/2015-7-8/decorate-beverage.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-8/decorate-beverage.jpg"/>
 
 ### **Beverage抽象类**
 

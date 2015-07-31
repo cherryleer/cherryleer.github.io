@@ -8,6 +8,7 @@ email: cherryleer@gmail.com
 github: cherryleer
 permalink: /:year/:month/:day/:title
 
+qiniu_static: http://7xkso7.com1.z0.glb.clouddn.com
 
 # Comment
 disqus_shortname: cherryleercom

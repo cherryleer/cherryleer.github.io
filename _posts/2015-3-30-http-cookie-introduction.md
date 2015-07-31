@@ -35,7 +35,7 @@ Cookie的工作机制是怎样的？
 
 Cookie的传递过程如下图所示:
 
-<p class="picture"><img alt="" src="/assets/img/2015-3-30/cookie.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-3-30/cookie.jpg"/></p>
 
 ## **Cookie安全性**
 

@@ -22,6 +22,6 @@ tags: 生活
 
 <p class="picture">
     <a href="http://cherryhelily.com" target="_blank">
-        <img src="/assets/img/2015-7-11/wedding-photo.png"/>
+        <img src="{{site.qiniu_static}}/assets/img/2015-7-11/wedding-photo.png"/>
     </a>
 </p>

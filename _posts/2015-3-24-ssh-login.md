@@ -26,19 +26,19 @@ Secure Shell（SSH） 是一个允许两台电脑之间通过安全的连接进�
 
 如下图所示：
 
-<p class="picture"><img alt="" src="/assets/img/2015-3-24/first-login.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-3-24/first-login.jpg"/></p>
 
 由于公钥很长，是一串长达1024位，采用RSA加密的字符串，很难识别。所以为了方便校验，指纹经过MD5加密，浓缩成了128位。
 
 如果no，则服务器会以“Host key verification failed.”终止链接。
 
-<p class="picture"><img alt="" src="/assets/img/2015-3-24/verify-no.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-3-24/verify-no.jpg"/></p>
 
 如果yes，则服务器会将公钥保存到$HOME/.ssh/known_hosts文件中。下次用户再登陆时，就不需要上面的步骤了。
 
-<p class="picture"><img alt="" src="/assets/img/2015-3-24/verify-yes.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-3-24/verify-yes.jpg"/></p>
 
-<p class="picture"><img alt="" src="/assets/img/2015-3-24/known-hosts.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-3-24/known-hosts.jpg"/></p>
 
 然后用户就可以输入密码，进行登陆了。
 

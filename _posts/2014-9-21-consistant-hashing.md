@@ -13,7 +13,7 @@ tags: 后端
 
 假设我们有一个网站，最近发现随着流量增加，服务器压力越来越大，之前直接读写数据库的方式不太给力了，于是我们想引入Memcached作为缓存机制。现在我们一共有三台机器可以作为Memcached服务器，如下图所示。
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/1.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/1.png"/></p>
 
 很显然，最简单的策略是将每一次Memcached请求随机发送到一台Memcached服务器，但是这种策略可能会带来两个问题：一是同一份数据可能被存在不同的机器上而造成数据冗余，二是有可能某数据已经被缓存但是访问却没有命中，因为无法保证对相同key的所有访问都被发送到相同的服务器。因此，随机策略无论是时间效率还是空间效率都非常不好。
 
@@ -45,19 +45,19 @@ tags: 后端
 Hot Spots on the World Wide Web》中被提出。简单来说，一致性哈希将整个哈希值空间组织成一个虚拟的圆环，如假设某哈希函数H的值空间为0 -
 232-1（即哈希值是一个32位无符号整形），整个哈希空间环如下：
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/2.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/2.png"/></p>
 
 整个空间按顺时针方向组织。0和232-1在零点中方向重合。
 
 下一步将各个服务器使用H进行一个哈希，具体可以选择服务器的ip或主机名作为关键字进行哈希，这样每台机器就能确定其在哈希环上的位置，这里假设将上文中三台服务器使用ip地址哈希后在环空间的位置如下：
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/3.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/3.png"/></p>
 
 接下来使用如下算法定位数据访问到相应服务器：将数据key使用相同的函数H计算出哈希值h，通根据h确定此数据在环上的位置，从此位置沿环顺时针“行走”，第一台遇到的服务器就是其应该定位到的服务器。
 
 例如我们有A、B、C、D四个数据对象，经过哈希计算后，在环空间上的位置如下：
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/4.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/4.png"/></p>
 
 根据一致性哈希算法，数据A会被定为到Server 1上，D被定为到Server 3上，而B、C分别被定为到Server 2上。
 
@@ -65,14 +65,14 @@ Hot Spots on the World Wide Web》中被提出。简单来说，一致性哈希�
 
 下面分析一致性哈希算法的容错性和可扩展性。现假设Server 3宕机了。
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/5.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/5.png"/></p>
 
 可以看到此时A、C、B不会受到影响，只有D节点被重定位到Server
 2。一般的，在一致性哈希算法中，如果一台服务器不可用，则受影响的数据仅仅是此服务器到其环空间中前一台服务器（即顺着逆时针方向行走遇到的第一台服务器）之间数据，其它不会受到影响。
 
 下面考虑另外一种情况，如果我们在系统中增加一台服务器Memcached Server 4：
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/6.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/6.png"/></p>
 
 此时A、D、C不受影响，只有B需要重定位到新的Server
 4。一般的，在一致性哈希算法中，如果增加一台服务器，则受影响的数据仅仅是新服务器到其环空间中前一台服务器（即顺着逆时针方向行走遇到的第一台服务器）之间数据，其它不会受到影响。
@@ -83,14 +83,14 @@ Hot Spots on the World Wide Web》中被提出。简单来说，一致性哈希�
 
 一致性哈希算法在服务节点太少时，容易因为节点分部不均匀而造成数据倾斜问题。例如我们的系统中有两台服务器，其环分布如下：
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/7.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/7.png"/></p>
 
 此时必然造成大量数据集中到Server 1上，而只有极少量会定位到Server
 2上。为了解决这种数据倾斜问题，一致性哈希算法引入了虚拟节点机制，即对每一个服务节点计算多个哈希，每个计算结果位置都放置一个此服务节点，称为虚拟节点。具体做法可以在服务器ip或主机名的后面增加编号来实现。例如上面的情况，我们决定为每台服务器计算三个虚拟节点，于是可以分别计算“Memcached
 Server 1#1”、“Memcached Server 1#2”、“Memcached Server 1#3”、“Memcached Server 2#1”、“Memcached Server
 2#2”、“Memcached Server 2#3”的哈希值，于是形成六个虚拟节点：
 
-<p class="picture"><img alt="" src="/assets/img/2014-9-21/8.png"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2014-9-21/8.png"/></p>
 
 同时数据定位算法不变，只是多了一步虚拟节点到实际节点的映射，例如定位到“Memcached Server 1#1”、“Memcached Server 1#2”、“Memcached Server
 1#3”三个虚拟节点的数据均定位到Server 1上。这样就解决了服务节点少时数据倾斜的问题。在实际应用中，通常将虚拟节点数设置为32甚至更大，因此即使很少的服务节点也能做到相对均匀的数据分布。

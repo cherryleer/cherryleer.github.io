@@ -41,7 +41,7 @@ ASCII码，是由美国人在上个世纪60年代制定的一套字符编码，�
 
 ASCII码由一个字节的前7位表示，字节的最高位规定为0。于是它总共可以表示2的7次方，128个字符。比如大写字母A是65（二进制01000001）。
 
-<img alt="" src="/assets/img/2015-7-24/ascii.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-24/ascii.jpg"/>
 
 ### **阶段二：欧洲国家（扩充ASCII码）**
 
@@ -51,7 +51,7 @@ ASCII码由一个字节的前7位表示，字节的最高位规定为0。于是�
 
 由于很多欧洲国家的字符不同，所以他们对ASCII码的扩充也不尽相同。比如130（二进制10000010）在法语编码中表示é，而在希伯来语编码中则表示ג。
 
-<img alt="" src="/assets/img/2015-7-24/ascii-extend.jpg"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-24/ascii-extend.jpg"/>
 
 ### **阶段三：其他国家（ANSI码）**
 
@@ -67,7 +67,7 @@ ASCII码由一个字节的前7位表示，字节的最高位规定为0。于是�
 
 不同的ANSI编码之间互不兼容，当信息在国际间交流时，无法将属于两种语言的文字，存储在同一段ANSI编码的文本中。
 
-<img alt="" src="/assets/img/2015-7-24/gb2312.png"/>
+<img alt="" src="{{site.qiniu_static}}/assets/img/2015-7-24/gb2312.png"/>
 
 ### **阶段四：所有国家（Unicode）**
 

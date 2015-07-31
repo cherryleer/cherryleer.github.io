@@ -23,15 +23,15 @@ tags: 前端
 * 首先需要一个[百度统计](http://tongji.baidu.com/)的账号
 * 登录后，点击网站中心，在控制台的右上角点击新增网站
 
-<p class="picture"><img alt="" src="/assets/img/2015-1-23/addSite.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-1-23/addSite.jpg"/></p>
 
 * 输入你想要统计的网站url
 
-<p class="picture"><img alt="" src="/assets/img/2015-1-23/addName.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-1-23/addName.jpg"/></p>
 
 * 将生成的js代码复制到你的网站
 
-<p class="picture"><img alt="" src="/assets/img/2015-1-23/copyCode.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-1-23/copyCode.jpg"/></p>
 
 * 完成，过20分钟，进入控制台，查看统计数据
 
@@ -43,14 +43,14 @@ tags: 前端
 * 进入[腾讯分析](http://v2.ta.qq.com/analysis/index)页面，用QQ账号登陆
 * 登陆后，进入站点列表，点击新增站点，在出现的输入框中输入需要统计的网站url
 
-<p class="picture"><img alt="" src="/assets/img/2015-1-23/addSiteToTX.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-1-23/addSiteToTX.jpg"/></p>
 
 * 点击获取代码
 
-<p class="picture"><img alt="" src="/assets/img/2015-1-23/getCode.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-1-23/getCode.jpg"/></p>
 
 * 将生成的代码复制到你的网站
 
-<p class="picture"><img alt="" src="/assets/img/2015-1-23/copyTXCode.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-1-23/copyTXCode.jpg"/></p>
 
 * 完成，过一会儿（感觉腾讯分析生效的时间略长，官网上也没有说明具体生效时间，百度官网写着是20分钟），进入控制台，查看统计数据

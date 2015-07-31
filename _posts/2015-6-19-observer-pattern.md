@@ -9,7 +9,7 @@ tags: 后端
  
 观察者模式，也叫做发布－订阅模式，定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖着都会收到通知并自动更新。
  
-<p class="picture"><img alt="" src="/assets/img/2015-6-19/observer-pattern-uml.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-19/observer-pattern-uml.jpg"/></p>
 
 ## **组成**
 
@@ -28,17 +28,17 @@ tags: 后端
 
 假如你的团队刚刚赢得了一纸合约，负责建立Weather-O-Rama公司的下一代气象站－Internet气象观测站。
 
-<p class="picture"><img alt="" src="/assets/img/2015-6-19/treaty.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-19/treaty.jpg"/></p>
 
 ### **气象监测应用的概况**
 
-<p class="picture"><img alt="" src="/assets/img/2015-6-19/glimpse.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-19/glimpse.jpg"/></p>
 
 我们的工作就是建立一个应用，利用WeatherData对象取得数据，并更新三个布告板：目前状况、气象统计和天气预报。
 
 ### **设计气象站**
 
-<p class="picture"><img alt="" src="/assets/img/2015-6-19/design.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-19/design.jpg"/></p>
 
 ### **实现气象站**
 

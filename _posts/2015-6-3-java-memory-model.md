@@ -17,7 +17,7 @@ Java内存模型规定了所有的变量都存储在主内存中。每条线程�
 
 线程、主内存、工作内存三者的交互关系如下图所示:
 
-<p class="picture"><img alt="" src="/assets/img/2015-6-3/mem_relation.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-3/mem_relation.jpg"/></p>
 
 ## **内存间交互操作**
 

@@ -5,7 +5,7 @@ description: MySQl数据库区别于其他数据库的最重要的一个特点�
 tags: 后端
 ---
 
-<p class="picture"><img alt="" src="/assets/img/2015-6-12/mysql-infrustructure.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-12/mysql-infrustructure.jpg"/></p>
 
 MySQL由以下几部分组成：
 
@@ -76,4 +76,4 @@ MyISAM存储引擎由MYD和MYI组成，MYD用来存放数据文件，MYI用来�
 
 存储引擎是MySQL体系结构的核心，下图取自MySQL得官方手册，简单比较了各个存储引擎之间的区别，包括存储容量的限制、事务支持、锁的粒度、MVCC支持、支持的索引、备份和复制等。
 
-<p class="picture"><img alt="" src="/assets/img/2015-6-12/engine-comparation.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-6-12/engine-comparation.jpg"/></p>
