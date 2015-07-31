@@ -1,0 +1,14 @@
+<div class="comment container">
+    <div id="disqus_thread"></div>
+
+    <!--新闻打分版，可实现对每篇新闻自动星级评分-->
+    <div id="SOHUCS" sid="{{page.id}}"></div>
+    <script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js"></script>
+    <script type="text/javascript">
+        window._config = {showScore: true};
+        window.changyan.api.config({
+            appid: 'cyrS6XKOK',
+            conf: 'prod_6b70740efb7ea36a9e4af9db731c2f50'
+        });
+    </script>
+</div>
