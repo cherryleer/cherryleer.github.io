@@ -9,7 +9,7 @@ tags: 前端
 
 但是一般的IDE都不支持Markdown语法高亮，这使得在用IDEA编辑时，很不爽。
 
-##解决办法：
+## 解决办法：
 
 * 安装插件：[idea-markdown](https://plugins.jetbrains.com/plugin/5970?pr=phpStorm)
 * 使用在线工具：[马克飞象](http://maxiang.info/), 其他类似的在线工具还有很多
