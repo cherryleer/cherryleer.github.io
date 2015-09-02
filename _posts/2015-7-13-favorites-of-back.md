@@ -24,6 +24,7 @@ tags: 收藏夹
 * [Spring](http://spring.io)
 * [Hibernate](http://hibernate.org)
 * [Shiro](http://shiro.apache.org)
+* [Wink](http://wink.apache.org)
 
 ## **容器**
 * [Nginx](http://nginx.org)
