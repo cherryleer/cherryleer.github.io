@@ -25,6 +25,7 @@ tags: 收藏夹
 * [Hibernate](http://hibernate.org)
 * [Shiro](http://shiro.apache.org)
 * [Wink](http://wink.apache.org)
+* [Cordova](http://cordova.apache.org)
 
 ## **容器**
 * [Nginx](http://nginx.org)
