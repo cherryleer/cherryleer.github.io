@@ -58,3 +58,14 @@ Dalvik虚拟机执行.dex的Dalvik的可执行问价，该格式文件针对小�
 ### **Linux内核**
 
 Android核心系统服务依赖于Linux内核，如安全性、内存管理、进程管理、网络协议栈和驱动模型等。Linux内核也同时作为硬件和软件栈之间的抽象层。
+
+## **Android网上资源**
+
+* [Android官网](http://www.android.com)
+* [Android开发者](http://www.androidin.com)
+* [Android开发网](http://www.android123.com)
+* [Android中文网](http://www.androidcn.net)
+* [Android中文API](http://www.android-doc.com/index.html)
+* [Android开发资源下载](http://www.androidhere.cn)
+* [Cordova官网](http://cordova.apache.org)
+* [CrossWalk官网](https://crosswalk-project.org)
