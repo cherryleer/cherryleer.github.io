@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android笔记：Android入门
-description: 前端相关收藏。
+description: Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。
 tags: 后端
 ---
 
