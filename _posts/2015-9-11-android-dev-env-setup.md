@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android笔记：Android开发环境搭建
-description: 前端相关收藏。
+description: 由于本人使用的是Mac，所以纪录Mac下Android开发环境的搭建方式。
 tags: 后端
 ---
 
