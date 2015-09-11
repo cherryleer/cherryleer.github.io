@@ -61,3 +61,5 @@ tags: 后端
 
 * 中科院开源协会镜像：mirrors.opencas.cn
 * 备用服务器地址：mirrors.opencas.org、mirrors.opencas.ac.cn
+
+参考地址：[http://developer.android.com/sdk/installing/index.html](http://developer.android.com/sdk/installing/index.html)
