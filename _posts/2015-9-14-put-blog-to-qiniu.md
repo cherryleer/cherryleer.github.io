@@ -13,7 +13,29 @@ tags: 前端
 
 ### **注册账号**
 
-[注册地址](https://portal.qiniu.com/signup)
+注册地址：[https://portal.qiniu.com/signup](https://portal.qiniu.com/signup)
 
 <p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-14/register.png"/></p>
 
+### **创建用户空间**
+
+登录账号，创建一个用户空间。
+
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-14/namespace.png"/></p>
+
+
+### **上传内容**
+
+进入用户空间，选择内容管理，开始上传内容。
+
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-14/upload.png"/></p>
+
+上传成功后，文件显示如下。
+
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-14/upload_success.png"/></p>
+
+### **在博客中引用**
+
+进入空间设置，纪录七牛的域名。这个域名就是用来访问你的资源服务器的。
+
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-14/domain.png"/></p>
