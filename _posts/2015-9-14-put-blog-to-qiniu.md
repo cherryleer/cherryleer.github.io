@@ -11,7 +11,7 @@ tags: 前端
 
 本人使用的是Jekyll，搭建在GitHub Pages上。下面以七牛云存储为例，讲下操作方法。
 
-### **注册账号**
+### **首先，注册账号**
 
 注册地址：[https://portal.qiniu.com/signup](https://portal.qiniu.com/signup)
 
@@ -36,6 +36,10 @@ tags: 前端
 
 ### **在博客中引用**
 
-进入空间设置，纪录七牛的域名。这个域名就是用来访问你的资源服务器的。
+进入空间设置，记录七牛的域名，这个域名就是用来访问你的资源服务器的。
 
 <p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-14/domain.png"/></p>
+
+在你博客中用该域名去替换原来的资源路径，这样在访问静态资源的时候，就转而去访问七牛云存储了。
+
+**注意：** 如果觉得七牛的域名比较难记，可以在jekyll的config.yml配置文件中为它设个变量名，比如“qiniu_static”，这样调用的时候，就可以使用**site.qiniu_static**去替代了。
