@@ -19,6 +19,7 @@ tags: 收藏夹
 * [Hadoop](http://hadoop.apache.org)
 * [Zookeeper](http://zookeeper.apache.org)
 * [HBase](http://hbase.apache.org)
+* [《Redis设计与实现》支持网站](http://redisbook.com)
 
 ## **框架**
 * [Spring](http://spring.io)
