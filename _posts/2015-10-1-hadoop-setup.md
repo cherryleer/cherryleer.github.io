@@ -52,3 +52,19 @@ Hadoop是一个由Apache基金会所开发的分布式系统基础架构。
 tar -zxf hadoop-2.6.0.tar.gz -C /usr/local/share
 {% endhighlight %}
 
+### **配置环境变量**
+
+在用户根目录下.bash_profile文件中，添加如下信息：
+
+{% highlight bash %}
+# hadoop
+export HADOOP_HOME=/usr/local/share/hadoop-2.6.0;
+export HADOOP_COMMON_HOME=${HADOOP_HOME};
+export HADOOP_HDFS_HOME=${HADOOP_HOME};
+export HADOOP_MAPRED_HOME=${HADOOP_HOME};
+export HADOOP_YARN_HOME=${HADOOP_HOME};
+export HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hadoop;
+export YARN_CONF_DIR=${HADOOP_CONF_DIR};
+
+export PATH=${PATH}:${HADOOP_HOME}/bin:${HADOOP_HOME}/sbin;
+{% endhighlight %}
