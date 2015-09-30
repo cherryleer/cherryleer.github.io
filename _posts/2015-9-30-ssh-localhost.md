@@ -13,4 +13,4 @@ tags: 前端
 
 「System Preferences」、「Sharing」、选中「Remote Login」
 
-<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-30/remote_login.jpg"/></p>
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-9-30/remote_login.png"/></p>
