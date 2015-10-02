@@ -1,20 +1,15 @@
 ---
 layout: post
 title: 大数据笔记：Mac Hadoop安装
-description:
+description: 本文详细介绍Hadoop在Mac上的安装过程。
 tags: 后端
 ---
-
-## **简介**
-Hadoop是一个由Apache基金会所开发的分布式系统基础架构。
-
-用户可以在不了解分布式底层细节的情况下，开发分布式程序。充分利用集群的威力进行高速运算和存储。
 
 ## **目的**
 
 本文详细介绍Hadoop在Mac上的安装过程。
 
-由于使用Homebrew安装完Hadoop后，启动总是有问题，网上查了很多资料，才算搞定，所以写篇博客纪录下。
+由于使用Homebrew安装完Hadoop后，启动总是有问题，网上查了很多资料，卸载，手动安装后，才算搞定，所以写篇博客纪录下。
 
 ## **基础环境准备**
 
@@ -29,7 +24,14 @@ Hadoop是一个由Apache基金会所开发的分布式系统基础架构。
 
 验证配置是否成功：
 
-<p class="picture"><img alt="" src="/assets/img/2015-10-1/java_home.png"/></p>
+{% highlight bash %}
+[cherryleer@home:~/Workspace/github/cherryleer.github.io master]$ echo $JAVA_HOME
+/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
+[cherryleer@home:~/Workspace/github/cherryleer.github.io master]$ java -version
+java version "1.7.0_75"
+Java(TM) SE Runtime Environment (build 1.7.0_75-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 24.75-b04, mixed mode)
+{% endhighlight %}
 
 ### **SSH免密码登录**
 
@@ -38,7 +40,10 @@ Hadoop是一个由Apache基金会所开发的分布式系统基础架构。
 
 验证配置是否成功：
 
-<p class="picture"><img alt="" src="/assets/img/2015-10-1/ssh_localhost.png"/></p>
+{% highlight bash %}
+[cherryleer@home:~/Workspace/github/cherryleer.github.io master]$ ssh localhost
+Last login: Wed Sep 30 17:56:40 2015
+{% endhighlight %}
 
 ## **Hadoop安装**
 
