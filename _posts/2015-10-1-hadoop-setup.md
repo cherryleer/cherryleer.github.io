@@ -25,9 +25,9 @@ tags: 后端
 验证配置是否成功：
 
 {% highlight bash %}
-[cherryleer@home:~/Workspace/github/cherryleer.github.io master]$ echo $JAVA_HOME
+[cherryleer@home:~]$ echo $JAVA_HOME
 /Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
-[cherryleer@home:~/Workspace/github/cherryleer.github.io master]$ java -version
+[cherryleer@home:~]$ java -version
 java version "1.7.0_75"
 Java(TM) SE Runtime Environment (build 1.7.0_75-b13)
 Java HotSpot(TM) 64-Bit Server VM (build 24.75-b04, mixed mode)
@@ -41,7 +41,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.75-b04, mixed mode)
 验证配置是否成功：
 
 {% highlight bash %}
-[cherryleer@home:~/Workspace/github/cherryleer.github.io master]$ ssh localhost
+[cherryleer@home:~]$ ssh localhost
 Last login: Wed Sep 30 17:56:40 2015
 {% endhighlight %}
 
@@ -146,7 +146,7 @@ export HADOOP_OPTS="$HADOOP_OPTS -Djava.security.krb5.realm=OX.AC.UK -Djava.secu
 执行hdfs namenode -format：
 
 {% highlight bash %}
-[cherryleer@home:/usr/local/share/hadoop-2.6.0 master]$ hdfs namenode format
+[cherryleer@home:~]$ hdfs namenode format
 15/10/02 23:35:47 INFO namenode.NameNode: STARTUP_MSG:
 /************************************************************
 STARTUP_MSG: Starting NameNode
@@ -185,7 +185,7 @@ SHUTDOWN_MSG: Shutting down NameNode at home/192.168.31.136
 执行start-dfs.sh：
 
 {% highlight bash %}
-[cherryleer@home:/usr/local/share/hadoop-2.6.0 master]$ start-dfs.sh
+[cherryleer@home:~]$ start-dfs.sh
 15/10/02 23:45:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Starting namenodes on [localhost]
 localhost: starting namenode, logging to /usr/local/share/hadoop-2.6.0/logs/hadoop-cherryleer-namenode-home.out
@@ -198,7 +198,7 @@ Starting secondary namenodes [0.0.0.0]
 执行start-yarn.sh：
 
 {% highlight bash %}
-[cherryleer@home:/usr/local/share/hadoop-2.6.0 master]$ start-yarn.sh
+[cherryleer@home:~]$ start-yarn.sh
 starting yarn daemons
 starting resourcemanager, logging to /usr/local/share/hadoop-2.6.0/logs/yarn-cherryleer-resourcemanager-home.out
 localhost: starting nodemanager, logging to /usr/local/share/hadoop-2.6.0/logs/yarn-cherryleer-nodemanager-home.out
@@ -207,7 +207,7 @@ localhost: starting nodemanager, logging to /usr/local/share/hadoop-2.6.0/logs/y
 执行jps，确认进程是否存在：
 
 {% highlight bash %}
-[cherryleer@home:/usr/local/share/hadoop-2.6.0 master]$ jps
+[cherryleer@home:~]$ jps
 12472 DataNode
 12766 NodeManager
 12686 ResourceManager
@@ -223,7 +223,7 @@ localhost: starting nodemanager, logging to /usr/local/share/hadoop-2.6.0/logs/y
 执行stop-all.sh:
 
 {% highlight bash %}
-[cherryleer@home:/usr/local/share/hadoop-2.6.0/sbin master]$ stop-all.sh
+[cherryleer@home:~]$ stop-all.sh
 This script is Deprecated. Instead use stop-dfs.sh and stop-yarn.sh
 15/10/02 23:51:20 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Stopping namenodes on [localhost]
@@ -241,7 +241,7 @@ no proxyserver to stop
 执行jps，确认进程是否已经退出：
 
 {% highlight bash %}
-[cherryleer@home:/usr/local/share/hadoop-2.6.0/sbin master]$ jps
+[cherryleer@home:~]$ jps
 13244 Jps
 {% endhighlight %}
 
