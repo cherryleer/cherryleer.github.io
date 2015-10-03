@@ -114,6 +114,8 @@ export HADOOP_OPTS="$HADOOP_OPTS -Djava.security.krb5.realm=OX.AC.UK -Djava.secu
 </property>
 {% endhighlight %}
 
+详细内容请参考：[core-default.xml](http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-common/core-default.xml)
+
 ### **修改hdfs-site.xml**
 
 路径：${HADOOP_HOME}/etc/hadoop/hdfs-site.xml
@@ -126,6 +128,8 @@ export HADOOP_OPTS="$HADOOP_OPTS -Djava.security.krb5.realm=OX.AC.UK -Djava.secu
   <value>1</value>
 </property>
 {% endhighlight %}
+
+详细内容请参考：[hdfs-default.xml](http://hadoop.apache.org/docs/r2.6.0/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
 
 ### **修改mapred-site.xml**
 
@@ -140,6 +144,8 @@ export HADOOP_OPTS="$HADOOP_OPTS -Djava.security.krb5.realm=OX.AC.UK -Djava.secu
   <final>true</final>
 </property>
 {% endhighlight %}
+
+详细内容请参考：[mapred-default.xml](http://hadoop.apache.org/docs/r2.6.0/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml)
 
 ## **启动Hadoop**
 
