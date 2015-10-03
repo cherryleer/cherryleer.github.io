@@ -252,3 +252,9 @@ no proxyserver to stop
 {% endhighlight %}
 
 相关进程已经退出，说明Hadoop正常关闭。
+
+## **参考资料**
+
+[Hadoop官网](http://www.micmiu.com)
+
+[Hadoop 2.2.0 单节点安装和测试](http://www.micmiu.com/bigdata/hadoop/hadoop2x-single-node-setup)
