@@ -1,13 +1,4 @@
 <a href="{{ "/rss.xml" | prepend: site.baseurl }}" class="sidebar-social-icon feed"></a>
 <a href="mailto:{{ site.email }}" class="sidebar-social-icon email"></a>
-
-{% if site.weibo %}
-  <a href="http://www.weibo.com/{{ site.weibo }}" class="sidebar-social-icon weibo" target="_blank"></a>
-{% endif %}
-
-{% if site.github %}
-  <a href="https://github.com/{{ site.github }}" class="sidebar-social-icon github" target="_blank"></a>
-{% endif %}
-
-<a href="{{ site.android }}" class="sidebar-social-icon android"></a>
-<a href="{{ site.ios }}" class="sidebar-social-icon apple"></a>
+<a href="{{ site.github }}" class="sidebar-social-icon github" target="_blank"></a>
+<a href="{{ site.twitter }}" class="sidebar-social-icon twitter" target="_blank"></a>

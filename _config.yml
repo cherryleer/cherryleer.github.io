@@ -4,9 +4,12 @@ baseurl: ""
 author: "Cherryleer"
 title: Cherryleer's Blog
 description: 这是Cherryleer的个人博客。
-email: cherryleer@gmail.com
-github: cherryleer
 permalink: /:year/:month/:day/:title
+
+email: cherryleer@gmail.com
+github: https://github.com/cherryleer
+weibo: http://www.weibo.com/u/2949186631
+twitter: https://twitter.com
 android: http://cherryleer.com/assets/app/Cherryleer-blog-0.0.1.apk
 ios: http://cherryleer.com/assets/app/Cherryleer-blog-0.0.1.ipa
 
