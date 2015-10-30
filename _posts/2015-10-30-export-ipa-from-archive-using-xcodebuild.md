@@ -27,9 +27,11 @@ tags: 后端
 
 ### **方案2: 使用xcodebuild命令**
 
-常用的命令有：
+使用xcodebuild命令可以绕过购买开发者账号的限制，将你的应用打包成最终ipa。
 
-#### **clean**
+## **xcodebuild常用命令**
+
+### **clean**
 
 {% highlight bash %}
 xcodebuild clean -project ${PROJECT_NAME}.xcodeproj \
@@ -37,7 +39,7 @@ xcodebuild clean -project ${PROJECT_NAME}.xcodeproj \
                  -alltargets
 {% endhighlight %}
 
-#### **Archive**
+### **Archive**
 
 {% highlight bash %}
 xcodebuild archive -project ${PROJECT_NAME}.xcodeproj \
@@ -46,7 +48,7 @@ xcodebuild archive -project ${PROJECT_NAME}.xcodeproj \
                    -archivePath bin/${PROJECT_NAME}.xcarchive
 {% endhighlight %}
 
-#### **clean**
+### **exportArchive**
 
 {% highlight bash %}
 xcodebuild -exportArchive -archivePath ${PROJECT_NAME}.xcarchive \
@@ -54,3 +56,34 @@ xcodebuild -exportArchive -archivePath ${PROJECT_NAME}.xcarchive \
                           -exportFormat ipa \
                           -exportProvisioningProfile ${PROFILE_NAME}
 {% endhighlight %}
+
+### **参数说明**
+
+**${PROJECT_NAME}:** 项目名。
+**${CONFIGURATION}:** 编译模式。Xcode默认会有两个编译模式：Debug和Release。Release下不能调试程序，编译时有做编译优化，比Debug打包出来的运行快，包也更小。如果不设置，默认为Release。
+
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-10-30/configuration.jpg"/></p>
+
+**${PROFILE_NAME}:**
+
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-10-30/profile.jpg"/></p>
+
+### **xcodebuild使用示例**
+
+因为先前已经用Xcode7打包生成了Archive文件，所以这边只演示**exportArchive**命令。
+
+{% highlight bash %}
+xcodebuild -exportArchive -archivePath Cherryleer.xcarchive \
+                          -exportPath Cherryleer \
+                          -exportFormat ipa \
+                          -exportProvisioningProfile iOS\ Team\ Provisioning\ Profile:\ com.cherryleer.blog
+{% endhighlight %}
+
+最后成功生成ipa文件。
+<p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-10-30/result.jpg"/></p>
+
+## **参考资料**
+
+[苹果官网xcodebuild说明](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html)
+
+[Reohou's Blog](http://blog.reohou.com/how-to-export-ipa-from-archive-using-xcodebuild)
