@@ -17,7 +17,7 @@ tags: 后端
 
 灰色区域下边有提示说需要去注册苹果开发者账号，按照提示去注册。
 
-如果想要注册成功，必须付费，个人开发者账号每年699，如果你打算上传到App Store，可以考虑购买，如果纯自己玩，成本就有点高了。
+如果想要注册成功，必须付费。个人开发者账号每年688软妹纸，如果你打算上传到App Store，可以考虑购买；如果纯自己玩，成本就有点高了。
 
 <p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-10-30/enroll.jpg"/></p>
 
@@ -25,7 +25,7 @@ tags: 后端
 
 ### **方案2: 使用xcodebuild命令**
 
-使用xcodebuild命令可以绕过购买开发者账号的限制，将你的应用打包成最终ipa。
+使用xcodebuild命令可以绕过需要开发者账号的限制，将你的应用打包成最终ipa。但是不能上传到App Store，不过对于纯自己玩的用户，已经足够了。
 
 ## **xcodebuild常用命令**
 
@@ -58,7 +58,8 @@ xcodebuild -exportArchive -archivePath ${PROJECT_NAME}.xcarchive \
 ### **参数说明**
 
 **${PROJECT_NAME}:** 项目名。
-**${CONFIGURATION}:** 编译模式。Xcode默认会有两个编译模式：Debug和Release。Release下不能调试程序，编译时有做编译优化，比Debug打包出来的运行快，包也更小。如果不设置，默认为Release。
+
+**${CONFIGURATION}:** 编译模式。Xcode默认会有两个编译模式：Debug和Release。Release下不能调试程序，编译时有做编译优化，比Debug打包出来的运行更快，包也更小。如果不设置，默认为Release。
 
 <p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-10-30/configuration.jpg"/></p>
 
@@ -78,6 +79,7 @@ xcodebuild -exportArchive -archivePath Cherryleer.xcarchive \
 {% endhighlight %}
 
 最后成功生成ipa文件。
+
 <p class="picture"><img alt="" src="{{site.qiniu_static}}/assets/img/2015-10-30/result.jpg"/></p>
 
 ## **参考资料**
