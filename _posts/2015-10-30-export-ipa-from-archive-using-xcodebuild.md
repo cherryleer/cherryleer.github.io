@@ -5,8 +5,6 @@ description: 使用xcodebuild将archive导出为ipa
 tags: 后端
 ---
 
-## **现象**
-
 由于Xcode7可以让开发者不用付费就能在手机上安装App，所以就心血来潮做了个App，用来载入博客。
 
 但是在用Xcode7生成Archive文件后，发现『export』按钮为灰色，无法将其导出为ipa文件。
