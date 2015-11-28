@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS笔记：使用xcodebuild将archive导出为ipa
-description: 使用xcodebuild将archive导出为ipa
+description: 由于Xcode7可以让开发者不用付费就能在手机上安装App，所以就心血来潮做了个App，用来载入博客。
 tags: 后端
 ---
 
