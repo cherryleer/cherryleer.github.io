@@ -59,7 +59,7 @@ public class Life {
 		
   public Life(Wife lily){
     this.lily = lily;
-	 this.chilid = lily.giveBirthTo();
+    this.chilid = lily.giveBirthTo();
   }
 		
   public String execute(){
