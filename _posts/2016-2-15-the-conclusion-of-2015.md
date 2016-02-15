@@ -50,7 +50,7 @@ tags: 生活
 ### **生活**
 {% highlight java %}
 
-public class Life {
+public class Life{
 		
   @NonNull
   private Wife lily;
@@ -65,7 +65,7 @@ public class Life {
   public String execute(){
     if(this.child != null){
     
-      if(this.child instanceOf Son)
+      if(this.child instanceof Son)
         child.name = "Little Cherry";
       else
         child.name = "Little Lily";
