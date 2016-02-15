@@ -26,5 +26,62 @@ tags: 生活
 ## **阿里**
 2015年很流行这么一句话：“世界这么大，我想去看看”。
 
+我想说：“阿里那么大，我也想看看”。
+
+阿里一直是我心中的一个梦想，不仅因为她在杭州，离家更近；更重要的是她的文化气息、技术氛围和承载的社会责任。
+
+先前也有一些机会去阿里，但是总觉得时机未到，直到今年的早些时候我仍然这样认为。然而年中初创公司的一次跳槽，改变了我的想法。牛逼的公司并非要到你牛逼的时候才去，去了说不定能更先牛逼起来。
+
+现在进阿里差不多100天了，感觉还不错。虽然比以前更忙了，但是看着比你牛逼的人比你更努力，你怎么好意思偷懒呢。
+
+## **2016年规划**
+新年的规划无外乎工作，学习和生活。
+
+### **工作**
+* 改善工作质量
+* 提高工作技巧
+* 多作工作总结
+
+### **学习**
+* 学习至少一种脚本语言
+* 多看书，提高架构水平
+* 多翻译，完善技术博客
+
+### **生活**
+{% highlight java %}
+
+public class Life {
+		
+  @NonNull
+  private Wife lily;
+		
+  private Child child;
+		
+  public Life(Wife lily){
+    this.lily = lily;
+	 this.chilid = lily.giveBirthTo();
+  }
+		
+  public String execute(){
+    if(this.child != null){
+    
+      if(this.child instanceOf Son)
+        child.name = "Little Cherry";
+      else
+        child.name = "Little Lily";
+      
+      return "Have a good life with my wife Lily and child " + child.name + "!";
+    }
+      
+    return "Have a good life with my wife Lily!";
+  }
+}
+
+{% endhighlight %}
+
+## **最后，我想对老婆说**
+“结婚后，宝宝默默付出了很多，宝宝辛苦了”。
+
+
 
 
