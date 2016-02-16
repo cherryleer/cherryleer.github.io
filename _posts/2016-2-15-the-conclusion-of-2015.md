@@ -48,17 +48,17 @@ tags: 生活
 * 多翻译，完善技术博客
 
 ### **生活**
+生活如果把它写成对象，应该是长这样的：
+
 {% highlight java %}
 
 public class Life{
 		
-  @NonNull
-  private Wife lily;
+  private static final Wife lily = Wife.Lily;
 		
-  private Child child;
+  protect Child child;
 		
-  public Life(Wife lily){
-    this.lily = lily;
+  public Life(){
     this.child = lily.giveBirthTo();
   }
 		
