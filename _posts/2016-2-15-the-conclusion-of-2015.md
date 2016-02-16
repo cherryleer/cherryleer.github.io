@@ -56,7 +56,7 @@ public class Life{
 		
   private static final Wife lily = Wife.Lily;
 		
-  protect Child child;
+  protected Child child;
 		
   public Life(){
     this.child = lily.giveBirthTo();
