@@ -63,9 +63,9 @@ public class Life{
   }
 		
   public String execute(){
-    if(this.child != null){
+    if(child != null){
     
-      if(this.child instanceof Son)
+      if(child instanceof Son)
         child.name = "Little Cherry";
       else
         child.name = "Little Lily";
